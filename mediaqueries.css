@@ -15,6 +15,10 @@
   #hamburger-nav {
     display: flex;
   }
+  #profile {
+    height: 83vh;
+    margin-bottom: 0;
+  }
   #experience, .experience-details-container {
     margin-top: 2rem;
   }
@@ -28,6 +32,7 @@
     height: fit-content;
   }
   section {
+    padding-top: 20vh;
     margin: 0 5%;
   }
   .section__pic-container {
@@ -41,10 +46,10 @@
 }
 
 @media screen and (max-width: 600px) {
-  #contact,
+  /* #contact,
   footer {
-    height: 40vh;
-  }
+    height: 55vh;
+  } */
   #profile {
     height: 83vh;
     margin-bottom: 0;
@@ -54,7 +59,6 @@
   }
   footer nav {
     height: fit-content;
-    margin-bottom: 2rem;
   }
   .about-containers,
   .contact-info-upper-container,
@@ -75,7 +79,7 @@
     font-size: 1.5rem;
   }
   .nav-links {
-    flex-direction: column;
+    flex-direction: row;
     gap: 0.5rem;
     text-align: center;
   }

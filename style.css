@@ -37,7 +37,8 @@ nav, .nav-links {
 nav {
   justify-content: space-around;
   align-items: center;
-  height: 17vh;
+  height: 10vh;
+  background-color: #03070b;
 }
 
 .nav-links {
@@ -47,19 +48,19 @@ nav {
 }
 
 a {
-  color: black;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   text-decoration-color: white;
 }
 
 a:hover {
   color: grey;
-  text-decoration: overline 2px;
   text-decoration-color: rgb(182, 182, 182);
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: 3rem;
+  color: white;
 }
 
 .logo:hover {
@@ -89,7 +90,7 @@ a:hover {
 .hamburger-icon span {
   width: 100%;
   height: 2px;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   transition: all 0.3 ease-in-out;
 }
 
@@ -108,7 +109,7 @@ a:hover {
   display: block;
   padding: 10px;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: black;
   text-decoration: none;
   transition: all 0.3 ease-in-out;
@@ -164,10 +165,11 @@ section {
 /* PROFILE SECTION */
 
 #profile {
+  position: relative;
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
+  height: 90vh;
 }
 
 .section__pic-container {
@@ -334,6 +336,7 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding: 2.5% 0;
 }
 
 .article-container {
@@ -348,12 +351,59 @@ section {
 article {
   display: flex;
   width: 10rem;
-  justify-content: space-around;
+  justify-content: initial;
   gap: 0.5rem;
 }
 
 article .icon {
   cursor: default;
+}
+
+/* Certifications */
+
+.certification {
+  text-align: center;
+  padding: 2.5% 0;
+}
+
+.certification h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+
+.certification hr {
+  width: 50%;
+  margin: 0 auto 1em;
+  border: 1px solid #000;
+}
+
+.certification ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.certification ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1em 0;
+}
+
+.certification ul li .icon {
+  width: 24px; /* Adjust size as needed */
+  height: 24px; /* Adjust size as needed */
+  margin-right: 5px; /* Space between icon and text */
+}
+
+.certification ul li a {
+  text-decoration: none;
+  color: #2d6eb0;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+.certification ul li a:hover {
+  color: #2c3e50;
 }
 
 /* PROJECTS SECTION */
@@ -389,7 +439,18 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  height: 90vh;
+}
+
+#contact a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+#contact a:hover {
+  color: grey;
+  text-decoration-color: rgb(182, 182, 182);
 }
 
 .contact-info-upper-container {
@@ -425,11 +486,16 @@ article .icon {
 
 /* FOOTER */
 
-footer {
-  height: 26vh;
-  margin: 0 1rem;
+footer .nav-links {
+  gap: 1rem;
+  list-style: none;
+  font-size: 1rem;
 }
 
 footer p {
+  padding-top: 1rem;
+  background-color: #000;
   text-align: center;
+  color: white;
+  font-size: 0.7rem;
 }
