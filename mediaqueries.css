@@ -32,7 +32,7 @@
     height: fit-content;
   }
   section {
-    padding-top: 20vh;
+    padding-top: 24vh;
     margin: 0 5%;
   }
   .section__pic-container {
@@ -51,8 +51,12 @@
     height: 55vh;
   } */
   #profile {
+    position: static;
     height: 83vh;
     margin-bottom: 0;
+  }
+  #contact {
+    padding-top: 0vh;
   }
   article {
     font-size: 1rem;
